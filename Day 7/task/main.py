@@ -1,4 +1,6 @@
 import random
+from wsgiref.validate import check_status
+
 from hangman_words import word_list
 import hangman_art
 
@@ -61,3 +63,4 @@ while not game_over:
 
     # TODO-2: - Update the code below to use the stages List from the file hangman_art.py
     print(hangman_art.stages[lives])
+
